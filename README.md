@@ -7,6 +7,7 @@ This tempalte currently requires:
 
 # Quickstart
 **NOTE:** If you have any issues with cargo saying that x86\_64-unknown-none target isn't found, please leave an issue so I can update the README
+
 Windows:
 ```cmd
 rustc build.rs -o build.exe
@@ -36,7 +37,7 @@ build help
 This might come accross as a bit heavy for just a build script and if you wanted to, you could always look at its code and see that most of it is fairly simple.
 Run a couple of commands, copy a couple of files and run a couple more commands.
 
-You could also ditch this entire concept and just simply 'simpify' the code - Remove the whole subcommand system and just call to build direct.
+You could also ditch this entire concept and just simply 'simpify' the code - Remove the whole subcommand system and just call to build directly.
 
 # Purpose
 This is mainly a template for quickly getting a rust written OS to a point where the OS boots
