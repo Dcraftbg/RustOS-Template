@@ -10,7 +10,7 @@ fn copy_all(what: &[&str], to: &str) -> std::io::Result<()> {
         let mut top: PathBuf = PathBuf::from(to);
         top.push(p_file);
         std::fs::copy(p,&top).map_err(|e| {
-            eprintln!("ERROR: Failed to copy file from {} to {}",p,top);
+            eprintln!("ERROR: Failed to copy file from {} to {}",p,top.display());
             e
         })?;
     } 
